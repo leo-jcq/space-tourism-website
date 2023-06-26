@@ -22,9 +22,11 @@
         &.open {
             width: 24px;
             height: 21px;
+
+            transition: opacity 0.5s ease;
         }
 
-        & .close {
+        &.close {
             width: 20px;
             height: 20px;
         }
@@ -32,6 +34,16 @@
         & img {
             width: 100%;
             height: 100%;
+        }
+    }
+
+    &.open {
+        & .button.open {
+            opacity: 0;
+        }
+
+        & .navList {
+            transform: translateX(0%);
         }
     }
 
@@ -69,10 +81,6 @@
         backdrop-filter: blur(40.7742px);
 
         transition: transform 0.5s ease;
-    }
-
-    &.open .navList {
-        transform: translateX(0%);
     }
 
     & .navItem {
