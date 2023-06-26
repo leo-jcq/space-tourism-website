@@ -1,0 +1,23 @@
+@import "/scss/variables";
+
+.home {
+    min-height: 100vh;
+
+    background-color: $dark-blue;
+    background-image: url("/imgs/home/background-home-mobile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: $tablet-width) {
+    .home {
+        background-image: url("/imgs/home/background-home-tablet.jpg");
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .home {
+        background-image: url("/imgs/home/background-home-desktop.jpg");
+    }
+}
