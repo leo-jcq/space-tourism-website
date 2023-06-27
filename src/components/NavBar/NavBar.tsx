@@ -1,7 +1,7 @@
 import { FC, useEffect, useRef, useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import closeIcon from '../../assets/icon-close.svg';
 import openIcon from '../../assets/icon-hamburger.svg';
+import NavItem from '../NavItem/NavItem';
 import './NavBar.scss';
 
 const NavBar: FC = () => {
@@ -38,34 +38,10 @@ const NavBar: FC = () => {
                         <img src={closeIcon} alt="Close" />
                     </button>
                 </li>
-                <li className="navItem">
-                    <NavLink
-                        to="/"
-                        className={({ isActive }) => `navLink ${isActive ? 'active' : ''}`}>
-                        <b>00</b>Home
-                    </NavLink>
-                </li>
-                <li className="navItem">
-                    <NavLink
-                        to="/destination"
-                        className={({ isActive }) => `navLink ${isActive ? 'active' : ''}`}>
-                        <b>01</b> Destination
-                    </NavLink>
-                </li>
-                <li className="navItem">
-                    <NavLink
-                        to="/crew"
-                        className={({ isActive }) => `navLink ${isActive ? 'active' : ''}`}>
-                        <b>02</b> Crew
-                    </NavLink>
-                </li>
-                <li className="navItem">
-                    <NavLink
-                        to="/technology"
-                        className={({ isActive }) => `navLink ${isActive ? 'active' : ''}`}>
-                        <b>03</b> Technology
-                    </NavLink>
-                </li>
+                <NavItem number="00" name="Home" to="/" />
+                <NavItem number="01" name="Destination" to="/destination" />
+                <NavItem number="02" name="Crew" to="/crew" />
+                <NavItem number="03" name="Technology" to="/technology" />
             </ul>
         </nav>
     );
