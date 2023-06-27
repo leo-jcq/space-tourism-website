@@ -1,6 +1,6 @@
 import { FC, useEffect, useRef, useState } from 'react';
-import closeIcon from '../../assets/icon-close.svg';
-import openIcon from '../../assets/icon-hamburger.svg';
+import closeIcon from '../../assets/imgs/icon-close.svg';
+import openIcon from '../../assets/imgs/icon-hamburger.svg';
 import NavItem from '../NavItem/NavItem';
 import './NavBar.scss';
 

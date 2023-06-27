@@ -1,7 +1,11 @@
 import { FC } from 'react';
 import './Destination.scss';
 
-const Destination: FC = () => {
+interface DestinationProps {
+    data: Destination[];
+}
+
+const Destination: FC<DestinationProps> = () => {
     return <div className="destination">Destination</div>;
 };
 

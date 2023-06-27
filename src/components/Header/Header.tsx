@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/imgs/logo.svg';
 import NavBar from '../NavBar/NavBar';
 import './Header.scss';
 
