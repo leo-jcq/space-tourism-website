@@ -6,15 +6,11 @@ import './NavBar.scss';
 
 const NavBar: FC = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const navListRef = useRef<HTMLUListElement>(null);
     const openBtnRef = useRef<HTMLButtonElement>(null);
 
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
-            if (
-                !navListRef.current?.contains(event.target as Node) &&
-                !openBtnRef.current?.contains(event.target as Node)
-            ) {
+            if (!openBtnRef.current?.contains(event.target as Node)) {
                 setIsOpen(false);
             }
         };
@@ -32,7 +28,7 @@ const NavBar: FC = () => {
 
             <span className="line"></span>
 
-            <ul className="navList" ref={navListRef}>
+            <ul className="navList">
                 <li className="navItem close">
                     <button className="button close" onClick={() => setIsOpen(false)}>
                         <img src={closeIcon} alt="Close" />

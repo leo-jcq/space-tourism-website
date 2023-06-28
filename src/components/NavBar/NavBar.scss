@@ -48,11 +48,10 @@
     }
 
     & .line {
-        width: 25vw;
-        max-width: 50%;
+        width: 60%;
         height: 1px;
 
-        background-color: $soft-gray;
+        background-color: $dark-gray;
 
         position: absolute;
         z-index: 99;
@@ -86,8 +85,6 @@
 
 @media screen and (min-width: $tablet-width) {
     .navBar {
-        width: 450px;
-
         & .button {
             display: none;
         }
@@ -98,10 +95,11 @@
 
             position: relative;
 
-            padding: 0;
+            padding: 0 37px;
 
             display: flex;
-            justify-content: space-evenly;
+            gap: 37px;
+            justify-content: center;
             align-items: center;
 
             transform: translateX(0%);
@@ -115,6 +113,13 @@
 
         & .line {
             display: block;
+        }
+
+        & .navList {
+            padding: 0;
+
+            gap: 0;
+            justify-content: space-evenly;
         }
     }
 }

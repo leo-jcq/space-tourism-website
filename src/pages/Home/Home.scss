@@ -9,7 +9,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    padding-top: 112px;
+    padding: {
+        top: 112px;
+        bottom: 48px;
+    }
 
     display: flex;
     gap: 80px;
@@ -84,7 +87,10 @@
     .home {
         background-image: url("/imgs/home/background-home-tablet.jpg");
 
-        padding-top: 202px;
+        padding: {
+            top: 200px;
+            bottom: 90px;
+        }
 
         gap: 145px;
 
