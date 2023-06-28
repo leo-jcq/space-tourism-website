@@ -1,0 +1,45 @@
+@import "/scss/variables";
+
+.page {
+    padding-top: 87px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .title {
+        display: flex;
+        gap: 28px;
+
+        & .number {
+            opacity: 0.25;
+        }
+    }
+}
+
+@media screen and (min-width: $tablet-width) {
+    .page {
+        padding-top: 135px;
+
+        align-items: flex-start;
+
+        & .title {
+            margin-left: 38px;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .page {
+        padding: {
+            top: 212px;
+            left: 167px;
+        }
+
+        align-items: flex-start;
+
+        & .title {
+            margin-left: 0;
+        }
+    }
+}
