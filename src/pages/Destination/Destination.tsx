@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import Page from '../Page/Page';
+import Page from '../../components/Page/Page';
 import './Destination.scss';
 
 interface DestinationProps {
