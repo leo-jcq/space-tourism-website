@@ -1,7 +1,14 @@
 @import "/scss/variables";
 
 .page {
+    min-height: 100vh;
+
     padding-top: 87px;
+
+    background-color: $dark-blue;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     display: flex;
     flex-direction: column;

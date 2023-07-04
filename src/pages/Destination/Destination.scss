@@ -1,13 +1,7 @@
 @import "/scss/variables";
 
 .destination {
-    min-height: 100vh;
-
-    background-color: $dark-blue;
     background-image: url("/imgs/destination/background-destination-mobile.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
     position: relative;
 

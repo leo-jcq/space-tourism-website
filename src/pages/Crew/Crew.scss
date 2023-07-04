@@ -1,13 +1,7 @@
 @import "/scss/variables";
 
 .crew {
-    min-height: 100vh;
-
-    background-color: $dark-blue;
     background-image: url("/imgs/crew/background-crew-mobile.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
     & .content {
         display: flex;
