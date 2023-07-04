@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { FC, useMemo, useState } from 'react';
 import Page from '../../components/Page/Page';
 import './Destination.scss';
 
@@ -9,7 +9,7 @@ interface DestinationProps {
 const Destination: FC<DestinationProps> = ({ data }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const destination = data[currentIndex];
+    const destination = useMemo(() => data[currentIndex], [data, currentIndex]);
 
     return (
         <Page name="destination" number="01" title="Pick your destination">

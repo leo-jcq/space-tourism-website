@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { FC, useMemo, useState } from 'react';
 import Page from '../../components/Page/Page';
 import './Crew.scss';
 
@@ -9,7 +9,7 @@ interface CrewProps {
 const Crew: FC<CrewProps> = ({ data }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const crew = data[currentIndex];
+    const crew = useMemo(() => data[currentIndex], [data, currentIndex]);
 
     return (
         <Page name="crew" number="02" title="Meet your crew">
