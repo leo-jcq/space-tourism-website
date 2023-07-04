@@ -13,8 +13,6 @@ const Crew: FC<CrewProps> = ({ data }) => {
 
     return (
         <Page name="crew" number="02" title="Meet your crew">
-            <div className="filter"></div>
-
             <div className="left">
                 <div className="text">
                     <h4 className="role">{crew.role}</h4>
