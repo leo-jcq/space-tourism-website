@@ -1,3 +1,4 @@
+
 import { FC, useMemo, useState } from 'react';
 import Page from '../../components/Page/Page';
 import './Crew.scss';
@@ -6,9 +7,17 @@ interface CrewProps {
     data: Crew[];
 }
 
+/**
+ * The crew page
+ *
+ * @param {CrewProps} { data }
+ * @return {JSX.Element} 
+ */
 const Crew: FC<CrewProps> = ({ data }) => {
+    // The current index of the crew member being displayed
     const [currentIndex, setCurrentIndex] = useState(0);
 
+    // The crew member being displayed
     const crew = useMemo(() => data[currentIndex], [data, currentIndex]);
 
     return (

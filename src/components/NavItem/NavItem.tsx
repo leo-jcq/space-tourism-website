@@ -8,6 +8,12 @@ interface NavItemProps {
     to: string;
 }
 
+/**
+ * A navigation item
+ *
+ * @param {NavItemProps} { number, name, to }
+ * @return {JSX.Element}
+ */
 const NavItem: FC<NavItemProps> = ({ number, name, to }) => {
     return (
         <li className="navItem">

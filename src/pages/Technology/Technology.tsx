@@ -6,9 +6,17 @@ interface TechnologyProps {
     data: Technology[];
 }
 
+/**
+ * The technology page
+ *
+ * @param {TechnologyProps} { data }
+ * @return {JSX.Element} 
+ */
 const Technology: FC<TechnologyProps> = ({ data }) => {
+    // The current index of the technology being displayed
     const [currentIndex, setCurrentIndex] = useState(0);
 
+    // The technology being displayed
     const technology = useMemo(() => data[currentIndex], [data, currentIndex]);
 
     return (

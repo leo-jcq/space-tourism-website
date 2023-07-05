@@ -8,7 +8,17 @@ import Destination from './pages/Destination/Destination';
 import Home from './pages/Home/Home';
 import Technology from './pages/Technology/Technology';
 
+/**
+ * The main app
+ *
+ * @return {JSX.Element}
+ */
 const App: FC = () => {
+    /**
+     * The dataFile that contains all of the data for the app
+     * 
+     * @type {dataType}
+     */
     const data: dataType = dataFile;
 
     return (

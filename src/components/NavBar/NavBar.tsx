@@ -4,10 +4,16 @@ import openIcon from '../../assets/imgs/icon-hamburger.svg';
 import NavItem from '../NavItem/NavItem';
 import './NavBar.scss';
 
+/**
+ * The navigation bar
+ *
+ * @return {JSX.Element} 
+ */
 const NavBar: FC = () => {
     const [isOpen, setIsOpen] = useState(false);
     const openBtnRef = useRef<HTMLButtonElement>(null);
 
+    // Listen for clicks outside the nav bar and close it if it's open
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
             if (!openBtnRef.current?.contains(event.target as Node)) {

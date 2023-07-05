@@ -4,6 +4,11 @@ import logo from '../../assets/imgs/logo.svg';
 import NavBar from '../NavBar/NavBar';
 import './Header.scss';
 
+/**
+ * Header of the app
+ *
+ * @return {JSX.Element}
+ */
 const Header: FC = () => {
     return (
         <header className="header">

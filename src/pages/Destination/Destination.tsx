@@ -6,9 +6,17 @@ interface DestinationProps {
     data: Destination[];
 }
 
+/**
+ * The destination page
+ *
+ * @param {DestinationProps} { data }
+ * @return {JSX.Element}
+ */
 const Destination: FC<DestinationProps> = ({ data }) => {
+    // The current index of the destination being displayed
     const [currentIndex, setCurrentIndex] = useState(0);
 
+    // The destination being displayed
     const destination = useMemo(() => data[currentIndex], [data, currentIndex]);
 
     return (

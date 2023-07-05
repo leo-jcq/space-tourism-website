@@ -2,6 +2,11 @@ import { FC } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.scss';
 
+/**
+ * The home page
+ *
+ * @return {JSX.Element}
+ */
 const Home: FC = () => {
     return (
         <div className="home">
